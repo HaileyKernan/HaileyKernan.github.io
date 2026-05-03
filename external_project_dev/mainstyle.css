@@ -1,0 +1,347 @@
+﻿/*Student ID: 7431244*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Black+Ops+One&display=swap');
+
+/*   
+    font-family: "Black Ops One", system-ui;
+    font-family: "Arvo", serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-family: "Black Ops One", system-ui;
+    font-size: 1.2rem;
+    max-width: 75%;
+    color: #000;
+    display: block;
+    padding: 8px 8px;
+    margin: 5px auto;
+    border-radius: 5px;
+    background-color: #007c47;
+}
+    a:hover {
+        background-color: #003c28;
+        color: #ffffff;
+    }
+
+    a:active {
+        background-color: #00c66c;
+        color: #000000;
+    }
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    color: #E25F22;
+    font-size: 2.5rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: #E25F22;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: "Arvo", serif;
+    line-height: 1.3rem;
+    padding-bottom: 10px;
+}
+
+body {
+    background-image: url("images/space_background.jpg");
+    background-repeat:repeat;
+}
+header{
+    position:relative;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+    nav ul li {
+        margin: 5px;
+        flex: 0 1 200px;
+    }
+
+
+        nav ul li a {
+            max-width: none;
+        }
+
+            
+main{
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1000px
+}
+
+section{
+    background-color: #F1DDD6;
+    padding: 15px 5px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+svg{
+    fill: none;
+}
+
+text {
+    font-size: 5px;
+    fill: #00c66c;
+    text-anchor: middle;
+    stroke: none;
+    font-family: "Black Ops One", system-ui;
+}
+
+header img{
+    max-width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 0%
+}
+
+img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+    footer p {
+        color: #E25F22;
+        margin:0;
+        margin-left: 10px;
+        align-content: center;
+    }
+footer section{
+    background-color: transparent;
+}
+footer img{
+    max-width:50px;
+}
+
+.image_left{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-row: auto;
+    grid-template-areas:
+        "image title"
+        "image text"
+        "image button"
+}
+
+    .image_left h2 {
+        grid-area: title;
+    }
+
+    .image_left p {
+        grid-area: text;
+        margin-right: 10%;
+    }
+
+    .image_left img {
+        grid-area: image;
+        padding: 10px;
+        padding-right: 20px;
+        margin-left: 10%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image_left a {
+        display: block;
+        max-width: 200px;
+        clear: right;
+        text-align: center;
+        max-height: fit-content;
+    }
+
+.menu_items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    background-color:transparent;
+    gap: 10px;
+}
+
+    .menu_items section {
+        flex: 0 1 23%;
+        text-align:center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu_items p{
+         text-align: center;
+    }
+
+    .menu_items a{
+          min-height: 60px;
+         text-align:center;
+        align-content:center;
+        padding: 0;
+         margin-top: 0;
+    }
+
+.selling_points {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    background-color: transparent;
+}
+
+.selling_points section{
+    flex: 0 1 30%
+}
+
+    .selling_points section p:first-of-type {
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: "Black Ops One", system-ui;
+        grid-area: title;
+        margin-bottom: 10px;
+    }
+
+.rewards_section{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content:center;
+}
+    .rewards_section p {
+        align-content: center;
+        font-size: 1.3rem;
+        padding: 0;
+    }
+    #page_name {
+        color: #E25F22;
+    }
+
+
+
+/*////////////////////////////////////*/
+@media (max-width: 800px){
+    .menu_items section{
+        flex: 0 1 31%;
+    }
+}
+
+
+/*////////////////////////////////////*/
+@media (max-width: 650px) {
+    footer{
+        display: block;
+    }
+    footer p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer section{
+        margin: 0 auto;
+        padding: 0;
+        max-width: fit-content;
+    }
+
+    .image_left {
+        display: block;
+    }
+
+        .image_left img {
+            float: right;
+            max-width: 50%;
+            margin-left: 5px;
+        }
+
+
+    .selling_points {
+        display: block;
+    }
+
+        .selling_points section {
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-row: auto;
+            grid-template-areas:
+                "image title"
+                "image text"
+                "image button"
+        }
+
+        .selling_points img {
+            grid-area: image;
+            padding: 10px;
+            padding-right: 20px;
+            margin-left: 10%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .selling_points p {
+            grid-area: text;
+            display: grid;
+        }
+
+    .menu_items section {
+        flex: 0 1 48%;
+    }
+
+    /*////////////////////////////////////////////*/
+    @media (max-width: 450px){
+        img {
+            display: block;
+        }
+       
+        footer img{
+            display: inline-block;
+        }
+
+        .image_left img {
+            float: none;
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        .selling_points section{
+            display: block;
+        }
+
+        .selling_points img {
+            max-width: 75%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+        
